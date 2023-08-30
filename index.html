@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output/tailwind.css" />
+  </head>
+  <body class="px-10 py-3 text-black font-medium">
+    <!-- ---------------------header section ------------------  -->
+    <div class="">
+      <h1 class="font-bold text-3xl text-blue900 text-center">Plan of Care</h1>
+      <div class="border-b-2 border-b-red-950"></div>
+      <div class="border-b-10 mt-0.5 h-1 bg-red-950"></div>
+    </div>
+
+    <!-- ---------------------main section ------------------  -->
+
+    <!-- ---------------------------line 1--------------------------- -->
+
+    <div class="flex border-b border-black mt-1">
+      <div class="flex-1 flex border-r border-black">
+        <label class="block min-w-fit pl-2" for="dateOfService"
+          >Date of Service:</label
+        >
+        <input
+          class="border-none focus:outline-none w-full"
+          type="text"
+          id="dateOfService"
+          name="dateOfService"
+        />
+      </div>
+      <div class="flex-1 flex border-r border-black">
+        <label class="block min-w-fit pl-2" for="costCenter"
+          >Cost Center or Program:</label
+        >
+        <input
+          class="border-none focus:outline-none w-full"
+          type="text"
+          id="costCenter"
+          name="costCenter"
+        />
+      </div>
+      <div class="flex-1 pl-2">
+        <div class="flex">
+          <label class="block" for="direct">Direct:</label>
+          <input
+            class="border-b focus:outline-none w-full"
+            type="text"
+            id="direct"
+            name="direct"
+          />
+          <label class="block" for="documentation">Documentation:</label>
+          <input
+            class="border-b focus:outline-none w-full"
+            type="text"
+            id="documentation"
+            name="documentation"
+          />
+        </div>
+
+        <div class="flex">
+          <label class="block" for="travel">Travel:</label>
+          <input
+            class="border-b focus:outline-none w-full"
+            type="text"
+            id="travel"
+            name="travel"
+          />
+          <label class="block" for="direct">Total:</label>
+          <input
+            class="border-b focus:outline-none w-full"
+            type="text"
+            id="total"
+            name="total"
+          />
+          <label class="block min-w-fit" for="serviceCode">Service Code:</label>
+          <input
+            class="border-none focus:outline-none w-full"
+            type="text"
+            id="serviceCode"
+            name="serviceCode"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------------------line 2--------------------------- -->
+
+    <!-- ---------------------------line --------------------------- -->
+    <div class="flex border-b border-black">
+      <div class="flex-1 flex">
+        <label class="block min-w-fit pl-2" for="clinicianName"
+          >Clinician's Name & License:</label
+        >
+        <input
+          class="border-none focus:outline-none w-full"
+          type="text"
+          id="clinicianName"
+          name="clinicianName"
+        />
+      </div>
+      <div class="flex-2 flex border-l pl-2 border-black">
+        <label class="block min-w-fit pl-2" for="client-identifier"
+          >Client Identifier:</label
+        >
+        <input
+          class="border-none focus:outline-none w-full"
+          type="text"
+          id="client-identifier"
+          name="client-identifier"
+        />
+      </div>
+    </div>
+
+    <!-- ---------------------------line 3--------------------------- -->
+    <div class="flex border-b border-black">
+      <div class="flex-1 flex">
+        <label class="block min-w-fit pl-2" for="clientName"
+          >Client’s Name:</label
+        >
+        <input
+          class="border-none focus:outline-none w-full"
+          type="text"
+          id="clientName"
+          name="clientName"
+        />
+      </div>
+      <div class="flex-2 flex border-l pl-2 border-black">
+        <div class="flex">
+          <label class="block min-w-fit pl-2" for="dateOfBirth"
+            >Date of Birth:</label
+          >
+          <input
+            class="border-none focus:outline-none w-full"
+            type="text"
+            id="dateOfBirth"
+            name="dateOfBirth"
+          />
+        </div>
+        <div class="flex border-l border-black pl-2">
+          <label class="block min-w-fit pl-2" for="gender">Gender:</label>
+          <input
+            class="border-none focus:outline-none w-full"
+            type="text"
+            id="gender"
+            name="gender"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------------------line 4--------------------------- -->
+
+    <div class="flex border-b border-black">
+      <div class="flex-1 flex">
+        <label class="block min-w-fit pl-2" for="guardian-name"
+          >Guardian’s Name:</label
+        >
+        <input
+          class="border-none focus:outline-none w-full"
+          type="text"
+          id="guardian-name"
+          name="guardian-name"
+        />
+      </div>
+      <div class="flex-2 flex border-l pl-2 border-black">
+        <div class="flex">
+          <label class="block min-w-fit pl-2" for="guardian-phone-number"
+            >Guardian’s Number:</label
+          >
+          <input
+            class="border-none focus:outline-none w-full"
+            type="text"
+            id="guardian-phone-number"
+            name="guardian-phone-number"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------------------line 5--------------------------- -->
+    <div class="flex border-b border-black">
+      <div class="flex-1 flex">
+        <label class="block min-w-fit pl-2" for="address"> Address: </label>
+        <input
+          class="border-none focus:outline-none w-full"
+          id="address"
+          type="text"
+        />
+      </div>
+      <div class="flex-1 flex border-l pl-2 border-black">
+        <div class="flex">
+          <label class="block min-w-fit pl-2" for="city"> City: </label>
+          <input
+            class="border-none focus:outline-none w-full"
+            id="city"
+            type="text"
+          />
+        </div>
+      </div>
+      <div class="flex-1 flex border-l pl-2 border-black">
+        <div class="flex">
+          <label class="block min-w-fit pl-2" for="zip"> Zip: </label>
+          <input
+            class="border-none focus:outline-none w-full"
+            id="zip"
+            type="text"
+          />
+        </div>
+      </div>
+      <div class="flex-1 flex border-l pl-2 border-black">
+        <div class="flex">
+          <label class="block min-w-fit pl-2" for="phone">
+            Phone Number:
+          </label>
+          <input
+            class="border-none focus:outline-none w-full"
+            id="phone"
+            type="text"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- ---------------------------line 6--------------------------- -->
+    <div class="flex border-b border-black">
+      <div class="flex-1 flex">
+        <label class="block min-w-fit pl-2" for="ethnicity"> Ethnicity: </label>
+        <input
+          class="border-none focus:outline-none w-full px-0"
+          id="ethnicity"
+          type="text"
+        />
+      </div>
+      <div class="flex-1 flex border-l border-black">
+        <div class="flex">
+          <label class="block min-w-fit pl-2" for="preferred-language">
+            Preferred Language:
+          </label>
+          <input
+            class="border-none focus:outline-none w-full px-0"
+            id="preferred-language"
+            type="text"
+          />
+        </div>
+      </div>
+      <div class="flex-1 flex border-l border-black">
+        <div class="flex">
+          <label class="block min-w-fit pl-2" for="provider-speaks-language">
+            Provider speaks preferred language:
+          </label>
+          <div class="flex items-center ml-2">
+            <input
+              class="form-radio h-4 w-4 mt-1 text-indigo-600"
+              id="provider-speaks-language-yes"
+              type="checkbox"
+              name="provider-speaks-language"
+              value="yes"
+            />
+            <label class="ml-1" for="provider-speaks-language-yes">Yes</label>
+          </div>
+          <div class="flex items-center ml-2">
+            <input
+              class="form-radio h-4 w-4 mt-1 text-indigo-600"
+              id="provider-speaks-language-no"
+              type="checkbox"
+              name="provider-speaks-language"
+              value="no"
+            />
+            <label class="ml-1" for="provider-speaks-language-no">No</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------------------line 7--------------------------- -->
+
+    <div class="flex border-b border-black mb-4">
+      <div class="flex-1 flex">
+        <label class="block min-w-fit pl-2" for="interpreter-needed">
+          Is interpreter needed?
+        </label>
+        <div class="flex items-center ml-2">
+          <input
+            class="form-radio h-4 w-4 mt-1"
+            id="interpreter-needed-yes"
+            type="checkbox"
+            name="interpreter-needed"
+            value="yes"
+          />
+          <label class="ml-1" for="interpreter-needed-yes">Yes</label>
+        </div>
+        <div class="flex items-center ml-2">
+          <input
+            class="form-radio h-4 w-4 mt-1"
+            id="interpreter-needed-no"
+            type="checkbox"
+            name="interpreter-needed"
+            value="no"
+          />
+          <label class="ml-1" for="interpreter-needed-no">No</label>
+        </div>
+      </div>
+      <div class="flex-1 flex border-l border-black">
+        <div class="flex">
+          <label class="block min-w-fit pl-2" for="client-accepts-interpreter">
+            Client accepts offer of interpretive services:
+          </label>
+          <div class="flex items-center ml-2">
+            <input
+              class="form-radio h-4 w-4 mt-1"
+              id="client-accepts-interpreter-yes"
+              type="checkbox"
+              name="client-accepts-interpreter"
+              value="yes"
+            />
+            <label class="ml-1" for="client-accepts-interpreter-yes">Yes</label>
+          </div>
+          <div class="flex items-center ml-2">
+            <input
+              class="form-radio h-4 w-4 mt-1"
+              id="client-accepts-interpreter-no"
+              type="checkbox"
+              name="client-accepts-interpreter"
+              value="no"
+            />
+            <label class="ml-1" for="client-accepts-interpreter-no">No</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------------------line 8--------------------------- -->
+    <h4>
+      <span class="font-bold text-.5xl"
+        >PLAN OF CARE Aimed at Mental Health Symptom Reduction :
+      </span>
+      <span class="font-bold text-red-900">
+        Please use behavioral terms showing observable quantifiable goals, cite
+        frequency of symptom(s) and behavioral goal(s). Identify expected
+        duration of services.
+      </span>
+    </h4>
+
+    <!-- ---------------------------line 9--------------------------- -->
+    <div>
+      <div class="flex mt-5 gap-20 pr-20">
+        <label class="flex-none text-xl font-bold pl-2" for="address">
+          Diagnosis:
+        </label>
+        <div class="flex-auto">
+          <input
+            class="border-b w-full border-black focus:outline-none"
+            id="diagnosis"
+            type="text"
+            name="diagnosis"
+          />
+          <small class="font-bold"
+            >Spell out problems and objectives, including client’s desired
+            outcome:
+          </small>
+          <textarea
+            rows="2"
+            class="border-b w-full border-black focus:outline-none resize-none"
+            id="desired-outcome"
+            type="text"
+            name="desired-outcome"
+          ></textarea>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------behavioral goal ------------------- -->
+    <div>
+      <div class="flex mt-5 gap-16 pr-20">
+        <label class="flex-none text-xl font-bold min-w-fit pl-2" for="address">
+          Behavioral <br />
+          Goal:
+        </label>
+        <div class="flex-auto">
+          <div class="flex mt-3 text-xl">
+            <label for="behavioral-goal-1">1.</label>
+            <input
+              class="border-b w-full border-black focus:outline-none"
+              id="behavioral-goal-1"
+              type="text"
+              name="behavioral-goal-1"
+            />
+          </div>
+          <div class="flex mt-3 text-xl">
+            <label for="behavioral-goal-2">2.</label>
+            <input
+              class="border-b w-full border-black focus:outline-none"
+              id="behavioral-goal-2"
+              type="text"
+              name="behavioral-goal-2"
+            />
+          </div>
+          <div class="flex mt-3 text-xl">
+            <label for="behavioral-goal-3">3.</label>
+            <input
+              class="border-b w-full border-black focus:outline-none"
+              id="behavioral-goal-3"
+              type="text"
+              name="behavioral-goal-3"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------------border----------------------------  -->
+    <div class="h-1 bg-black mt-4"></div>
+
+    <!-- ----------------individual therapy ---------------------------  -->
+
+    <div>
+      <div class="flex">
+        <h6 class="flex-none w-56 text-xl font-medium">Individual Therapy:</h6>
+        <div class="flex-auto flex border-b border-l border-black">
+          <input
+            class="ml-2 mr-2 h-4 w-4 mt-1 mb-1 border-black"
+            type="checkbox"
+            name="individual-therapy-non-md"
+            id="individual-therapy-non-md"
+          />
+          <label
+            class="min-w-fit pr-4 border-r border-black"
+            for="individual-therapy-non-md"
+            >Non-MD</label
+          >
+
+          <input
+            class="ml-2 mr-2 h-4 w-4 mt-1 mb-1 border-black"
+            type="checkbox"
+            name="individual-therapy-md"
+            id="individual-therapy-md"
+          />
+          <label class="pr-4 border-r border-black" for="individual-therapy-md"
+            >MD</label
+          >
+
+          <label
+            class="min-w-fit ml-2"
+            for="individual-therapy-duration-frequency"
+            >Duration & Frequency:</label
+          >
+          <input
+            class="w-full focus:outline-none"
+            type="text"
+            name="individual-therapy-duration-frequency"
+            id="individual-therapy-duration-frequency"
+          />
+        </div>
+      </div>
+      <div class="flex">
+        <label
+          for="individual-therapy-technique-to-achieve-goal "
+          class="min-w-fit"
+          >Techniques to Achieve Goals:</label
+        >
+        <input
+          class="w-full border-none focus:outline-none"
+          name="individual-therapy-technique-to-achieve-goal"
+          id="individual-therapy-technique-to-achieve-goal"
+          type="text"
+        />
+      </div>
+    </div>
+
+    <!-- ------------------------border------------------------ -->
+    <div class="h-1 bg-black"></div>
+
+    <!-- ----------------family therapy ---------------------------  -->
+
+    <div>
+      <div class="flex gap-20">
+        <h6 class="flex-none min-w-fit text-xl font-medium">Family Therapy:</h6>
+        <div class="flex-auto flex border-b border-l border-black">
+          <input
+            class="ml-2 mr-2 h-4 w-4 mt-1 mb-1 border-black"
+            type="checkbox"
+            name="family-therapy-non-md"
+            id="family-therapy-non-md"
+          />
+          <label
+            class="min-w-fit pr-4 border-r border-black"
+            for="family-therapy-non-md"
+            >Non-MD</label
+          >
+
+          <input
+            class="ml-2 mr-2 h-4 w-4 mt-1 mb-1 border-black"
+            type="checkbox"
+            name="family-therapy-md"
+            id="family-therapy-md"
+          />
+          <label class="pr-4 border-r border-black" for="family-therapy-md"
+            >MD</label
+          >
+
+          <label class="min-w-fit ml-2" for="family-therapy-duration-frequency"
+            >Duration & Frequency:</label
+          >
+          <input
+            class="w-full focus:outline-none"
+            type="text"
+            name="family-therapy-duration-frequency"
+            id="family-therapy-duration-frequency"
+          />
+        </div>
+      </div>
+      <div class="flex">
+        <label for="family-therapy-technique-to-achieve-goal " class="min-w-fit"
+          >Techniques to Achieve Goals:</label
+        >
+        <input
+          class="w-full border-none focus:outline-none"
+          name="family-therapy-technique-to-achieve-goal"
+          id="family-therapy-technique-to-achieve-goal"
+          type="text"
+        />
+      </div>
+    </div>
+    <!-- ------------------------border------------------------ -->
+    <div class="h-1 bg-black"></div>
+
+    <!-- ----------------Group therapy ---------------------------  -->
+
+    <div>
+      <div class="flex">
+        <h6 class="flex-none w-56 text-xl font-medium">Group Therapy:</h6>
+        <div class="flex-auto flex border-b border-l border-black">
+          <input
+            class="ml-2 mr-2 h-4 w-4 mt-1 mb-1 border-black"
+            type="checkbox"
+            name="group-therapy-non-md"
+            id="group-therapy-non-md"
+          />
+          <label
+            class="min-w-fit pr-4 border-r border-black"
+            for="group-therapy-non-md"
+            >Non-MD</label
+          >
+
+          <input
+            class="ml-2 mr-2 h-4 w-4 mt-1 mb-1 border-black"
+            type="checkbox"
+            name="group-therapy-md"
+            id="group-therapy-md"
+          />
+          <label class="pr-4 border-r border-black" for="group-therapy-md"
+            >MD</label
+          >
+
+          <label class="min-w-fit ml-2" for="group-therapy-duration-frequency"
+            >Duration & Frequency:</label
+          >
+          <input
+            class="w-full focus:outline-none"
+            type="text"
+            name="group-therapy-duration-frequency"
+            id="group-therapy-duration-frequency"
+          />
+        </div>
+      </div>
+      <div class="flex">
+        <label for="group-therapy-technique-to-achieve-goal " class="min-w-fit"
+          >Techniques to Achieve Goals:</label
+        >
+        <input
+          class="w-full border-none focus:outline-none"
+          name="group-therapy-technique-to-achieve-goal"
+          id="group-therapy-technique-to-achieve-goal"
+          type="text"
+        />
+      </div>
+    </div>
+    <!-- ------------------------border------------------------ -->
+    <div class="h-1 bg-black"></div>
+
+    <!-- ----------------individual rehabilitation ---------------------------  -->
+
+    <div>
+      <div class="flex">
+        <h6 class="flex-none w-56 border-r border-black text-xl font-medium">
+          Individual Rehabilitation:
+        </h6>
+        <div class="flex-auto flex border-b border-black">
+          <input
+            class="ml-2 mr-2 h-4 w-4 mt-1 mb-1 border-black"
+            type="checkbox"
+            name="individual-rehabilitation-non-md"
+            id="individual-rehabilitation-non-md"
+          />
+          <label
+            class="min-w-fit pr-4 border-r border-black"
+            for="individual-rehabilitation-non-md"
+            >Non-MD</label
+          >
+
+          <input
+            class="ml-2 mr-2 h-4 w-4 mt-1 mb-1 border-black"
+            type="checkbox"
+            name="individual-rehabilitation-md"
+            id="individual-rehabilitation-md"
+          />
+          <label
+            class="pr-4 border-r border-black"
+            for="individual-rehabilitation-md"
+            >MD</label
+          >
+
+          <label
+            class="min-w-fit ml-2"
+            for="individual-rehabilitation-duration-frequency"
+            >Duration & Frequency:</label
+          >
+          <input
+            class="w-full focus:outline-none"
+            type="text"
+            name="individual-rehabilitation-duration-frequency"
+            id="individual-rehabilitation-duration-frequency"
+          />
+        </div>
+      </div>
+      <div class="flex">
+        <label
+          for="individual-rehabilitation-technique-to-achieve-goal "
+          class="min-w-fit"
+          >Techniques to Achieve Goals:</label
+        >
+        <input
+          class="w-full border-none focus:outline-none"
+          name="individual-rehabilitation-technique-to-achieve-goal"
+          id="individual-rehabilitation-technique-to-achieve-goal"
+          type="text"
+        />
+      </div>
+    </div>
+
+    <div class="min-h-screen"></div>
+  </body>
+</html>
